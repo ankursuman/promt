@@ -5,15 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <style>
+        .card {
+            /* Add shadows to create the "card" effect */
+            height: 600px;
+            padding: 250px,250px;
+            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+            transition: 0.3s;
+            border-radius: 5px; 
+            background-color:powderblue;
+            
+          }
+          
+          /* On mouse-over, add a deeper shadow */
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          /* Add some padding inside the card container */
+          .container {
+            padding: 2px 16px;
+          }
+          img {
+            border-radius: 5px 5px 0 0;
+          }
+    </style>
 </head>
 <body>
 
-    <h1 align="center"> Welcome </h1>
-    
-    <a href="/login">Login</a> <br> <br>
-    <a href="/signup">Sign Up</a>
-    <!-- <form action="/user_signup" method="post"></form>
-    <form action="/user_signup" method="post"></form> -->
+    <h1 align="center"> Welcome to Prometheus, XLRI </h1>
+    <div class = card>
+       <img src="\static\download.jpg", alt="", align=center>
+        <div class = container>
+            <a href="/login">Login</a> <br> <br>
+        </div>
+        <div class = container>
+            <a href="/signup">Sign Up</a>
+        </div>
+        <!-- <form action="/user_signup" method="post"></form>
+        <form action="/user_signup" method="post"></form> -->
+    </div>
 
 </body>
 </html>
