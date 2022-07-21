@@ -5,9 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <style>
+        .card {
+            /* Add shadows to create the "card" effect */
+            height: 600px;
+            padding: 250px,250px;
+            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+            transition: 0.3s;
+            border-radius: 5px; 
+            background-color:powderblue;
+            
+          }
+          
+          /* On mouse-over, add a deeper shadow */
+          .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+          
+          /* Add some padding inside the card container */
+          .container {
+            padding: 2px 16px;
+          }
+          img {
+            border-radius: 5px 5px 0 0;
+          }
+    </style>
 </head>
 <body>
 
+    <div class= card>
     <form action="/user_signup" method="post">
         <h1>Signup</h1>
         <input type="text" placeholder="Name" name="name"> <br> <br>
@@ -20,8 +46,9 @@
     </form>
 
     <h1>{{info}}</h1>
+    </div>
 
-    <a href="/">Front page</a>
+    <a href="/">Home page</a>
 
 </body>
 </html>
